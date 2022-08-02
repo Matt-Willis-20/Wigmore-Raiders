@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    text-align: center;
+  }
+  
+  h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.5em;
+    letter-spacing: 0.05em;
+  }
+  
+  h3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2em;
+  }
+  
+  p, td {
+    font-family: 'Cutive Mono', monospace;
+  }
+  
+  #training, #gallery-sub, #contact-us {
+    text-align: left;
+    border-bottom: 1px solid gainsboro;
+  }
+  
+  #gallery-sub, #contact-us {
+    width: 90%;
+    margin: 1.5em auto 0;
+  }
+
+  main {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 425px) {
+    h2 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
+  /* ------ NAVIGATION BAR - TOP OF PAGE ----- */
+  
+  nav {
+    height: 80px;
+    width: 100%;
+    position: fixed; /*sets nav bar to fixed position*/
+    top: 0; /*position the nav bar at top of page*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 0 20px;
+  }
+  
+  nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.5em;
+  }
+  
+  nav a:hover { 
+    color: orangered;
+    text-decoration: 1px underline;
+    text-underline-offset: 10px;
+  }
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3em;
+  }
+
+  @media screen and (max-width: 1100px) {
+
+    .logo {
+      font-size: 2.5rem;
+    }
+    
+    .main-nav a {
+      font-size: 1.3rem;
+      margin: 0 15px;
+    }
+  }
+
+
+  @media screen and (max-width: 900px) {
+    .main-nav a {
+      font-size: 1.1rem;
+    }
+  }
+  
+  /* ----- HEADER/BANNER SECTION ----- */
+  
+  header {
+    margin-top: 80px; /* to prevent overlay with nav bar*/
+  }
+  
+  .banner {
+    background-image: url("banner2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 7%;
+  }
+  
+  .banner-text-container {
+    max-width: 800px;
+  }
+  
+  .banner p {
+    font-family: 'Cutive Mono', monospace;
+    font-size: 4em;
+    letter-spacing:0.04em;
+    color: rgba(0, 0, 0, 1);
+    text-align: left;
+  }
+  
+  #bold {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7em;
+    text-align: left;
+  }
+  
+  span {
+     font-size: 4.5em;
+     font-family: 'Bebas Neue', cursive;
+  }
+
+
+  @media screen and (max-width: 1000px) {
+    .banner p {
+      font-size: 3rem;
+    }
+
+    #bold {
+      font-size: 6em;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .banner p {
+      font-size: 2rem;
+    }
+
+    #bold {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    
+    .banner-text-container{
+      width: 90%;
+    }
+
+    .banner p {
+      font-size: 1.8rem;
+    }
+
+    #bold {
+      font-size: 3rem;
+    }
+  }
+  
+  /* ----- MISSION SECTION ----- */
+  
+  #about {
+    padding: 5.5em 0 3.5rem;
+  }
+  
+  .container {
+    width: 95%;
+    margin: 1.5em auto;
+    padding: 1em;
+  }
+  
+  .mission-container {
+    display: flex;
+    padding: 1em 3em 1em 1em;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0.75em;
+    align-items: center;
+  }
+  
+  .mission_fig {
+    width: 45%;
+    flex: 0 1 45%;
+    margin: -1.5em 5% -1.5em -1.5em;
+    
+  }
+  
+  .mission_img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .mission_text {
+    flex: 1 1 50%;
+    align-self: center;
+  }
+  
+  .mission_text h2, .mission_text p {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .mission_text p {
+    line-height: 1.5em;
+    font-size: 1.2rem;
+  }
+
+  @media screen and (max-width: 800px) {
+    .mission-container {
+      flex-direction: column;
+      padding: 1em;
+    }
+
+    .mission_text {
+      margin-top: 1rem;
+    }
+
+    .mission_img {
+      height: 300px;
+    }
+
+    .mission_fig {
+      flex: 0 1 100%;
+      margin-right: -4rem;
+      }
+    }
+  
+  
+  /* ----- Training times SECTION ----- */
+  
+  .table-container {
+    width: 100%;
+    background-color: gainsboro;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 0.4em;
+    margin: 1em auto 2em;
+    overflow-y: hidden;
+  }
+  
+  table {  
+    padding: 0.75em;
+    width: 100%;
+  }
+  
+  table, td, th {
+    border: 3px solid gainsboro;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  th {
+    background: orangered;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Cutive Mono', monospace;
+    letter-spacing: 0.2em;
+  }
+  
+  td, th {
+    padding: 1em;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .tables h3 {
+    text-align: left;
+    margin-top: 2em;
+  }
+
+  @media screen and (max-width: 1100px) {
+    td, th {
+      padding: 0.75em;
+      font-weight: bold;
+      font-size: 1em;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    
+    .table-container {
+      border-radius: 0.3em;
+      padding: 0.3em;
+    }
+    
+    td, th {
+      padding: 0.5em;
+      font-size: .75em;
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    .table-container {
+      border-radius: 0.2em;
+      padding: 0.2em;
+    }
+    
+    td, th {
+      font-size: .5em;
+    }
+  }
+  
+  
+  /* ----- GALLERY SECTION ----- */
+
+  #gallery {
+    padding-bottom: 1rem;
+  }
+  
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94%;
+    margin: 2.5em auto;
+  }
+  
+  .gallery-container img {
+    width: 270px;
+    height: 350px;
+    align-items: flex-end;
+    flex-grow: 1;
+    object-fit: cover;
+    object-position: center;
+    margin: 12px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5); 
+    
+  }
+
+
+  /* ----  CONTACT SECTION --------- */
+
+  .venue-container {
+    display: flex;
+    padding: 1em;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 0.75em;
+    height: 300px;
+  }
+  
+  .venue_fig {
+    width: 45%;
+    flex: 0 1 40%;
+    margin: -1.5em 5% -1.5em -1.5em;
+  }
+  
+  .venue_img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .venue_text {
+    flex: 1 1 50%;
+    align-self: center;
+  }
+  
+  .venue_text h2, .venue_text p {
+    text-align: left;
+    padding: 8px 0;
+  }
+  
+  .venue_text p {
+    font-size: 1.3rem;
+  }
+
+
+  
